@@ -275,6 +275,52 @@ bluetooth package.
 
 ## kernel
 
+### *CVE-2017-18509 EoP High
+
+https://github.com/torvalds/linux/commit/99253eb750fda6a644d5188fb26c43bad8d5a745
+
+### CVE-2020-11272 Cirtal
+uaf in wlan0
+
+### CVE-2020-11271 High
+
+maybe race condition in audio
+
+### CVE-2020-11277 High 
+
+Camera
+
+### CVE-2020-11282 High
+
+permission
+
+### CVE-2020-11286 Hgih
+
+/drivers/usb/dwc3/ep0.c
+
+### CVE-2020-11297 High
+
+https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/wlan/qcacld-3.0/commit/?id=2a10c7aa8cdd3277e35176207c44ade90a567e73 
+
+###  Qualcomm closed-source components
+
+CVE-2020-11163	A-162751928*		Critical	Closed-source component
+CVE-2020-11170	A-162753079*		Critical	Closed-source component
+CVE-2020-11177	A-162755362*		High	Closed-source component
+CVE-2020-11180	A-168050602*		High	Closed-source component
+CVE-2020-11187	A-162755638*		High	Closed-source component
+CVE-2020-11253	A-168722706*		High	Closed-source component
+CVE-2020-11269	A-172348983*		High	Closed-source component
+CVE-2020-11270	A-172349024*		High	Closed-source component
+CVE-2020-11275	A-172348985*		High	Closed-source component
+CVE-2020-11276	A-172349003*		High	Closed-source component
+CVE-2020-11278	A-172349045*		High	Closed-source component
+CVE-2020-11280	A-172348987*		High	Closed-source component
+CVE-2020-11281	A-161714839*		High	Closed-source component
+CVE-2020-11283	A-168918306*		High	Closed-source component
+CVE-2020-11287	A-172348989*		High	Closed-source component
+CVE-2020-11296	A-172348729*		High	Closed-source component
+
 # 2021.01
 # 2020.12
 # 2020.11
