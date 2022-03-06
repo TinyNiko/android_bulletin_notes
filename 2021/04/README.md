@@ -1,4 +1,4 @@
-# framework
+# Framework
 
 ## CVE-2021-0400	A-177561690	EoP	High	9, 10, 11
 
