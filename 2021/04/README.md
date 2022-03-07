@@ -1,4 +1,4 @@
-# Framework
+# framework
 
 ## CVE-2021-0400	A-177561690	EoP	High	9, 10, 11
 
@@ -44,7 +44,9 @@
 
 # kernel
 
-## CVE-2020-15436	A-174737742 Upstream kernel	EoP	High	Kernel Block Device Subsystem
+## CVE-2020-15436	A-174737742 Upstream kernel	EoP	High	
+
+## Kernel Block Device Subsystem
 
 ## CVE-2020-25705	A-174737972 Upstream kernel	ID	High	ICMP
 
