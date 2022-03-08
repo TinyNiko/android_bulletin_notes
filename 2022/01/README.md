@@ -29,15 +29,12 @@ OOB write in events.cpp (Recovery mode), write \0 at the end of pevent->name, bu
      }
 ```
 
-
 [Diff - f0a760b3a154ad328c682ec8559287befff14945^! - platform/bootable/recovery - Git at Google (googlesource.com)](https://android.googlesource.com/platform/bootable/recovery/+/f0a760b3a154ad328c682ec8559287befff14945%5E%21/#F0)
-
 
 ### CVE-2020-0338
 
 | CVE-2020-0338 | [A-123700107](https://android.googlesource.com/platform/frameworks/base/+/6ebf410b818c6a525130d5fcb72381217fec8e7a) | ID | High |
 | ------------- | ---------------------------------------------------------------------------------------------------------------- | -- | ---- |
-
 
 [Diff - 6ebf410b818c6a525130d5fcb72381217fec8e7a^! - platform/frameworks/base - Git at Google (googlesource.com)](https://android.googlesource.com/platform/frameworks/base/+/6ebf410b818c6a525130d5fcb72381217fec8e7a%5E%21/#F0)
 
@@ -75,8 +72,6 @@ In multiple methods of EuiccNotificationManager.java, there is a possible way to
 
 | CVE-2021-39620 | [A-203847542](https://android.googlesource.com/platform/frameworks/native/+/f2e0a95700a937e421647623a60c9fc01d6e5d87) | EoP | High |
 | -------------- | ------------------------------------------------------------------------------------------------------------------ | --- | ---- |
-
-
 
 [f2e0a95700a937e421647623a60c9fc01d6e5d87 - platform/frameworks/native - Git at Google (googlesource.com)](https://android.googlesource.com/platform/frameworks/native/+/f2e0a95700a937e421647623a60c9fc01d6e5d87)
 
@@ -130,7 +125,7 @@ PendingIntent problem?
 | CVE-2021-39629 | [A-197353344](https://android.googlesource.com/platform/hardware/nxp/nfc/+/63162916491d3ad034e0288fb2e254cf2b66db92) | EoP | High |
 | -------------- | ----------------------------------------------------------------------------------------------------------------- | --- | ---- |
 
-Use after free in phTmlNfc_TmlThread. 
+Use after free in phTmlNfc_TmlThread.
 
 How to fuzz NFC.
 
@@ -141,7 +136,7 @@ How to fuzz NFC.
 | CVE-2021-0643 | [A-183612370](https://android.googlesource.com/platform/frameworks/opt/telephony/+/f6bb9b20840c29e74a37ea2b880e63b3fc9470ff) | ID | High |
 | ------------- | ------------------------------------------------------------------------------------------------------------------------- | -- | ---- |
 
-ID in telephony module. 
+ID in telephony module.
 
 [Diff - f6bb9b20840c29e74a37ea2b880e63b3fc9470ff^! - platform/frameworks/opt/telephony - Git at Google (googlesource.com)](https://android.googlesource.com/platform/frameworks/opt/telephony/+/f6bb9b20840c29e74a37ea2b880e63b3fc9470ff%5E%21/#F0)
 
@@ -167,11 +162,28 @@ Fix the integer overflow/underflow caused by sorting of duplicate phoneaccounts 
 
 ### CVE-2021-0959
 
+| CVE-2021-0959 | A-200284993 | EoP | High |
+| ------------- | ----------- | --- | ---- |
+
+In jit_memory_region.cc, there is a possible bypass of memory restrictions due to a logic error in the code. This could lead to local escalation of privilege with User execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-12Android ID: A-200284993.
+
+[jit_memory_region.cc - Android Code Search](https://cs.android.com/android/platform/superproject/+/master:art/runtime/jit/jit_memory_region.cc;l=76?q=200284993&sq=&hl=zh-cn)
+
 ## kernel components
 
 ### CVE-2021-39634
 
+| CVE-2021-39634 | A-204450605``[Upstream kernel](https://android.googlesource.com/kernel/common/+/f8d4f44df056c5b504b0d49683fb7279218fd207) | EoP | High |
+| -------------- | ---------------------------------------------------------------------------------------------------------------------- | --- | ---- |
+
+[Diff - f8d4f44df056c5b504b0d49683fb7279218fd207^! - kernel/common - Git at Google (googlesource.com)](https://android.googlesource.com/kernel/common/+/f8d4f44df056c5b504b0d49683fb7279218fd207%5E%21/#F0)
+
 ### CVE-2021-39633
+
+| CVE-2021-39633 | A-150694665``[Upstream kernel](http://android.googlesource.com/kernel/common/+/1d011c4803c72f3907eccfc1ec63caefb852fcbf) | ID | High |
+| -------------- | --------------------------------------------------------------------------------------------------------------------- | -- | ---- |
+
+[Diff - 1d011c4803c72f3907eccfc1ec63caefb852fcbf^! - kernel/common - Git at Google (googlesource.com)](https://android.googlesource.com/kernel/common/+/1d011c4803c72f3907eccfc1ec63caefb852fcbf%5E%21/#F0)
 
 ## MTK
 
@@ -185,28 +197,117 @@ Fix the integer overflow/underflow caused by sorting of duplicate phoneaccounts 
 
 ### CVE-2021-31889
 
+I can't find useful infomation for mtk bugs.
+
 ## Unisoc
 
 ### CVE-2021-1049
+
+reported from hackerone
 
 ## Qualcomm
 
 ### CVE-2021-30319
 
+| CVE-2021-30319 | A-202025735``[QC-CR#2960714](https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/wlan/qcacld-3.0/commit/?id=c3baa174ab2cafb6b65ba34d935eb24e56609cd3) | High |
+| -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---- |
+
+bufferoverflow in wma
+
+```cpp
+-	if (p2p_ie_len)
++
++	if (tmpl_len > WMI_BEACON_TX_BUFFER_SIZE) {
++		wma_err("tmpl_len: %d > %d. Invalid tmpl len", tmpl_len,
++			WMI_BEACON_TX_BUFFER_SIZE);
++		return -EINVAL;
++	}
++
++	if (p2p_ie_len) {
++		if (tmpl_len <= p2p_ie_len) {
++			wma_err("tmpl_len %d <= p2p_ie_len %d, Invalid",
++				tmpl_len, p2p_ie_len);
++			return -EINVAL;
++		}
+ 		tmpl_len -= (uint32_t) p2p_ie_len;
++	}
++
+
+```
+
+[platform/vendor/qcom-opensource/wlan/qcacld-3.0 - Unnamed repository (codeaurora.org)](https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/wlan/qcacld-3.0/commit/?id=c3baa174ab2cafb6b65ba34d935eb24e56609cd3)
+
 ### CVE-2021-30353
+
+| CVE-2021-30353 | A-202025599``[QC-CR#2993069](https://source.codeaurora.org/quic/le/platform/hardware/qcom/audio/commit/?id=af30f0103a50df510a71a12047b5c68b4e3b8a72) [[2](https://source.codeaurora.org/quic/le/platform/hardware/qcom/audio/commit/?id=37a434f57bddfad4544102c4d15f93120bbac71d)] | High |
+| -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---- |
+
+[platform/hardware/qcom/audio - Unnamed repository; edit this file &#39;description&#39; to name the repository. (codeaurora.org)](https://source.codeaurora.org/quic/le/platform/hardware/qcom/audio/commit/?id=af30f0103a50df510a71a12047b5c68b4e3b8a72)
+
+### CVE-2021-30313
+
+Use After Free in Wired Connectivity
+
+Use after free condition can occur in wired connectivity due to a race condition while creating and deleting folders
+
 
 ## Qualcomm closed-source
 
 ### CVE-2021-30285
 
+| [CVE-2021-30285](https://www.qualcomm.com/company/product-security/bulletins/january-2022-bulletin#_cve-2021-30285) | Critical | Critical | KERNEL |
+| ---------------------------------------------------------------------------------------------------------------- | -------- | -------- | ------ |
+
+Improper validation of memory region in Hypervisor can lead to incorrect region mapping
+
 ### CVE-2021-30287
+
+| CVE-2021-30287 | A-193070556[*](https://source.android.com/security/bulletin/2022-01-01#asterisk) | High |
+| -------------- | ----------------------------------------------------------------------------- | ---- |
+
+Possible assertion due to improper validation of symbols configured for PDCCH monitoring
 
 ### CVE-2021-30300
 
+| CVE-2021-30300 | A-193071116[*](https://source.android.com/security/bulletin/2022-01-01#asterisk) | High |
+| -------------- | ----------------------------------------------------------------------------- | ---- |
+
+Possible denial of service due to incorrectly decoding hex data for the SIB2 OTA message and assigning a garbage value to choice when processing the SRS configuration
+
 ### CVE-2021-30301
+
+| CVE-2021-30301 | A-193070342[*](https://source.android.com/security/bulletin/2022-01-01#asterisk) | High |
+| -------------- | ----------------------------------------------------------------------------- | ---- |
+
+Possible denial of service due to out of memory while processing RRC and NAS OTA message
 
 ### CVE-2021-30307
 
+| CVE-2021-30307 | A-193070700[*](https://source.android.com/security/bulletin/2022-01-01#asterisk) | High |
+| -------------- | ----------------------------------------------------------------------------- | ---- |
+
+Possible denial of service due to improper validation of DNS response when DNS client requests with PTR, NAPTR or SRV query type
+
 ### CVE-2021-30308
 
-### CVE-2021-3031
+| CVE-2021-30308 | A-193070594[*](https://source.android.com/security/bulletin/2022-01-01#asterisk) | High |
+| -------------- | ----------------------------------------------------------------------------- | ---- |
+
+Buffer Copy Without Checking Size of Input in Modem
+
+Possible buffer overflow while printing the HARQ memory partition detail due to improper validation of buffer size
+
+### CVE-2021-30311
+
+| CVE-2021-30311 | A-193070557[*](https://source.android.com/security/bulletin/2022-01-01#asterisk) | High |
+| -------------- | ----------------------------------------------------------------------------- | ---- |
+
+Possible heap overflow due to lack of index validation before allocating and writing to heap buffer
+
+### CVE-2021-30330
+
+Possible null pointer dereference due to improper validation of APE clip
+
+### CVE-2021-30314
+
+Lack of validation for third party application accessing the service can lead to information disclosure
