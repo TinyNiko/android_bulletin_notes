@@ -136,8 +136,6 @@ UAF in bt
 
 In startListening of PluginManagerImpl.java, there is a possible way to disable arbitrary app components due to a missing permission check. This could lead to local denial of service with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-10 Android-11Android ID: A-193444889
 
-This bug is interesting.
-
 [CVE_2021_0706.java - Android Code Search](https://cs.android.com/android/platform/superproject/+/master:cts/hostsidetests/securitybulletin/src/android/security/cts/CVE_2021_0706.java;l=41?q=193444889&hl=zh-cn)
 
 # Kernel
@@ -154,13 +152,25 @@ This bug is interesting.
 
 ### CVE-2022-20024
 
+In system service, there is a possible permission bypass due to a missing permission check. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS06219064; Issue ID: ALPS06219064.
+
 ### CVE-2022-20025
+
+In Bluetooth, there is a possible out of bounds write due to a missing bounds check. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS06126832; Issue ID: ALPS06126832.
 
 ### CVE-2022-20026
 
+In Bluetooth, there is a possible out of bounds write due to a missing bounds check. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS06126827; Issue ID: ALPS06126827.
+
 ### CVE-2022-20027
 
+In Bluetooth, there is a possible out of bounds write due to a missing bounds check. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS06126826; Issue ID: ALPS06126826.
+
 ### CVE-2022-20028
+
+In Bluetooth, there is a possible out of bounds write due to a missing bounds check. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS06198663; Issue ID: ALPS06198663.
+
+[February 2022 (mediatek.com)](https://corp.mediatek.com/product-security-bulletin/February-2022)
 
 ## Unisoc
 

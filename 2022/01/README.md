@@ -189,15 +189,25 @@ In jit_memory_region.cc, there is a possible bypass of memory restrictions due t
 
 ### CVE-2021-31345
 
+The total length of an UDP payload (set in the IP header) is unchecked. This may lead to various side effects, including Information Leak and Denial-of-Service conditions, depending on a user-defined applications that runs on top of the UDP protocol. (FSMD-2021-0006)
+
 ### CVE-2021-31346
+
+The total length of an ICMP payload (set in the IP header) is unchecked. This may lead to various side effects, including Information Leak and Denial-of-Service conditions, depending on the network buffer organization in memory. (FSMD-2021-0007)
 
 ### CVE-2021-31890
 
+The total length of an TCP payload (set in the IP header) is unchecked. This may lead to various side effects, including Information Leak and Denial-of-Service conditions, depending on the network buffer organization in memory. (FSMD-2021-0017)
+
 ### CVE-2021-40148
+
+In Modem EMM, there is a possible information disclosure due to a missing data encryption. This could lead to remote information disclosure with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: MOLY00716585; Issue ID: ALPS05886933.
 
 ### CVE-2021-31889
 
-I can't find useful infomation for mtk bugs.
+Malformed TCP packets with a corrupted SACK option leads to Information Leaks and Denial-of-Service conditions.
+
+[January 2022 (mediatek.com)](https://corp.mediatek.com/product-security-bulletin/January-2022)
 
 ## Unisoc
 
