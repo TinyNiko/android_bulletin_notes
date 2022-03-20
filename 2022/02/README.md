@@ -144,29 +144,60 @@ In startListening of PluginManagerImpl.java, there is a possible way to disable 
 
 ### CVE-2021-39631
 
+| CVE-2021-39631 | [A-193890833](https://android.googlesource.com/platform/packages/apps/Settings/+/a36d55e8f83e8bf6e50254cda04632e233598f42) [[2](https://android.googlesource.com/platform/packages/apps/Settings/+/d2d3da3850d1eefd2a49dc93e1b6f953711a8902)] | ID | High |
+| -------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -- | ---- |
+
+？？？
+
+[Diff - a36d55e8f83e8bf6e50254cda04632e233598f42^! - platform/packages/apps/Settings - Git at Google (googlesource.com)](https://android.googlesource.com/platform/packages/apps/Settings/+/a36d55e8f83e8bf6e50254cda04632e233598f42%5E%21/#F0)
+
 ## Amlogic components
 
 ### CVE-2021-39672
+
+| CVE-2021-39672`` | A-202018701[*](https://source.android.com/security/bulletin/2022-02-01#asterisk) | High |
+| ----------------------- | ----------------------------------------------------------------------------- | ---- |
+
+In fastboot, there is a possible secure boot bypass due to a configuration error. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation. Product: Android Versions: Android SoC Android ID: A-202018701
 
 ## MTK
 
 ### CVE-2022-20024
 
+
+| CVE-2022-20024`` | A-209705228``M-ALPS06219064[*](https://source.android.com/security/bulletin/2022-02-01#asterisk) | High |
+| ----------------------- | ---------------------------------------------------------------------------------------------------- | ---- |
+
 In system service, there is a possible permission bypass due to a missing permission check. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS06219064; Issue ID: ALPS06219064.
 
 ### CVE-2022-20025
+
+
+| CVE-2022-20025 | A-209700749``M-ALPS06126832[*](https://source.android.com/security/bulletin/2022-02-01#asterisk) | High |
+| -------------- | ---------------------------------------------------------------------------------------------------- | ---- |
 
 In Bluetooth, there is a possible out of bounds write due to a missing bounds check. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS06126832; Issue ID: ALPS06126832.
 
 ### CVE-2022-20026
 
+| CVE-2022-20026 | A-209705229``M-ALPS06126827[*](https://source.android.com/security/bulletin/2022-02-01#asterisk) | High |
+| -------------- | ---------------------------------------------------------------------------------------------------- | ---- |
+
 In Bluetooth, there is a possible out of bounds write due to a missing bounds check. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS06126827; Issue ID: ALPS06126827.
 
 ### CVE-2022-20027
 
+
+| CVE-2022-20027 | A-209702508``M-ALPS06126826[*](https://source.android.com/security/bulletin/2022-02-01#asterisk) | High |
+| -------------- | ---------------------------------------------------------------------------------------------------- | ---- |
+
 In Bluetooth, there is a possible out of bounds write due to a missing bounds check. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS06126826; Issue ID: ALPS06126826.
 
 ### CVE-2022-20028
+
+
+| CVE-2022-20028 | A-209702509``M-ALPS06198663[*](https://source.android.com/security/bulletin/2022-02-01#asterisk) | High |
+| -------------- | ---------------------------------------------------------------------------------------------------- | ---- |
 
 In Bluetooth, there is a possible out of bounds write due to a missing bounds check. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS06198663; Issue ID: ALPS06198663.
 
@@ -176,32 +207,111 @@ In Bluetooth, there is a possible out of bounds write due to a missing bounds ch
 
 ### CVE-2021-39616
 
+| CVE-2021-39616 | A-204686438``U-1704529[*](https://source.android.com/security/bulletin/2022-02-01#asterisk) | High |
+| -------------- | ----------------------------------------------------------------------------------------------- | ---- |
+
+No useful information found.
+
+
 ### CVE-2021-39635
 
+| CVE-2021-39635 | A-206492634``U-1731024[*](https://source.android.com/security/bulletin/2022-02-01#asterisk) | High |
+| -------------- | ----------------------------------------------------------------------------------------------- | ---- |
+
+ims_ex is a vendor system service used to manage VoLTE in unisoc devices?But it does not verify the caller's permissions?so that normal apps (No phone permissions) can obtain some VoLTE sensitive information and manage VoLTE calls.
+
 ### CVE-2021-39658
+
+| CVE-2021-39658 | A-207479207``U-1732729[*](https://source.android.com/security/bulletin/2022-02-01#asterisk) | High |
+| -------------- | ----------------------------------------------------------------------------------------------- | ---- |
+
+ismsEx service is a vendor service in unisoc equipment?ismsEx service is an extension of sms system service?but it does not check the permissions of the caller?resulting in permission leaks?Third-party apps can use this service to arbitrarily modify and set system properties?
 
 ## Qualcomm
 
 ### CVE-2021-35068
 
-### CVE-2021-35069
+| CVE-2021-35068`` | A-202025798``[QC-CR#2982971](https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/system/bt/commit/?id=ef43deea3f1408b249a59ba8a8bfafdaeec025fb) | High |
+| ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---- |
+
+[platform/vendor/qcom-opensource/system/bt - Unnamed repository (codeaurora.org)](https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/system/bt/commit/?id=ef43deea3f1408b249a59ba8a8bfafdaeec025fb)
+
+### 
+CVE-2021-35069
+
+
+| CVE-2021-35069`` | A-203032261``[QC-CR#3001191](https://source.codeaurora.org/quic/qsdk/platform/vendor/qcom-opensource/wlan/qca-wifi-host-cmn/commit/?id=4fbee7311baa3fc198f320f01c469326312863c0) | High |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---- |
+
+Interge overflow
+
+[platform/vendor/qcom-opensource/wlan/qca-wifi-host-cmn - Unnamed repository (codeaurora.org)](https://source.codeaurora.org/quic/qsdk/platform/vendor/qcom-opensource/wlan/qca-wifi-host-cmn/commit/?id=4fbee7311baa3fc198f320f01c469326312863c0)
 
 ### CVE-2021-35074
 
+| CVE-2021-35074 | A-204905255``[QC-CR#2998013](https://source.codeaurora.org/quic/la/kernel/msm-5.4/commit/?id=b8f8e895b6b715360e79c51e2cd50b27ce2005b3) | High |
+| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------ | ---- |
+
+[kernel/msm-5.4 - Unnamed repository; edit this file &#39;description&#39; to name the repository. (codeaurora.org)](https://source.codeaurora.org/quic/la/kernel/msm-5.4/commit/?id=b8f8e895b6b715360e79c51e2cd50b27ce2005b3)
+
 ### CVE-2021-35075
+
+| CVE-2021-35075`` | A-204905325``[QC-CR#2998149](https://source.codeaurora.org/quic/la/kernel/msm-5.4/commit/?id=8bbe418836192817143685077cfca76b92811a6f) | High |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ | ---- |
+
+NPD
+
+[kernel/msm-5.4 - Unnamed repository; edit this file &#39;description&#39; to name the repository. (codeaurora.org)](https://source.codeaurora.org/quic/la/kernel/msm-5.4/commit/?id=8bbe418836192817143685077cfca76b92811a6f)
 
 ### CVE-2021-35077
 
+| CVE-2021-35077 | A-204904989``[QC-CR#3007135](https://source.codeaurora.org/quic/la/kernel/msm-5.4/commit/?id=0250c674ae086eac6ab7432b8b0ace1b434ec2d2) | High |
+| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------ | ---- |
+
+Multi-Thread leading to UAF
+
+[kernel/msm-5.4 - Unnamed repository; edit this file &#39;description&#39; to name the repository. (codeaurora.org)](https://source.codeaurora.org/quic/la/kernel/msm-5.4/commit/?id=0250c674ae086eac6ab7432b8b0ace1b434ec2d2)
+
 ## Qualcomm closed-source
 
-### CVE-2021-30317
+### * CVE-2021-30317
+
+| CVE-2021-30317 | A-195750667[*](https://source.android.com/security/bulletin/2022-02-01#asterisk) | Critical |
+| -------------- | ----------------------------------------------------------------------------- | -------- |
+
+Improper validation of program headers containing ELF metadata can lead to image verification bypass
 
 ### CVE-2021-30309
 
+| CVE-2021-30309 | A-195750718[*](https://source.android.com/security/bulletin/2022-02-01#asterisk) | High |
+| -------------- | ----------------------------------------------------------------------------- | ---- |
+
+Improper size validation of QXDM commands can lead to memory corruption
+
 ### CVE-2021-30318
+
+| CVE-2021-30318 | A-202025316[*](https://source.android.com/security/bulletin/2022-02-01#asterisk) | High |
+| -------------- | ----------------------------------------------------------------------------- | ---- |
+
+Improper validation of input when provisioning the HDCP key can lead to memory corruption
 
 ### CVE-2021-30322
 
+| CVE-2021-30322 | A-195751178[*](https://source.android.com/security/bulletin/2022-02-01#asterisk) | High |
+| -------------- | ----------------------------------------------------------------------------- | ---- |
+
+Possible out of bounds write due to improper validation of number of GPIOs configured in an internal parameters array
+
 ### CVE-2021-30323
 
+| CVE-2021-30323 | A-195750446[*](https://source.android.com/security/bulletin/2022-02-01#asterisk) | High |
+| -------------- | ----------------------------------------------------------------------------- | ---- |
+
+Improper validation of maximum size of data write to EFS file can lead to memory corruption
+
 ### CVE-2021-30326
+
+| CVE-2021-30326 | A-195751080[*](https://source.android.com/security/bulletin/2022-02-01#asterisk) | High |
+| -------------- | ----------------------------------------------------------------------------- | ---- |
+
+Possible assertion due to improper size validation while processing the DownlinkPreemption IE in an RRC Reconfiguration/RRC Setup message
