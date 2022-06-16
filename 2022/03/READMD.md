@@ -7,8 +7,6 @@
 | CVE-2021-39689 | [A-206090748](https://android.googlesource.com/platform/system/security/+/9a374680df1912fb983bf174d88ddeb71932cec1) | EoP | Moderate |
 | -------------- | ---------------------------------------------------------------------------------------------------------------- | --- | -------- |
 
-[9a374680df1912fb983bf174d88ddeb71932cec1 - platform/system/security - Git at Google (googlesource.com)](https://android.googlesource.com/platform/system/security/+/9a374680df1912fb983bf174d88ddeb71932cec1)
-
 ## Framework
 
 ### CVE-2021-39692
@@ -176,53 +174,51 @@ c444eb564fb16645c172d550359cb3d75fe8a040 - kernel/common - Git at Google (google
 ### CVE-2021-39685
 
 | CVE-2021-39685 | A-210292376``[Upstream kernel](https://android.googlesource.com/kernel/common/+/b4604acd52a691c2fd33ad0a0fafb7cc19dee5de) [[2](https://android.googlesource.com/kernel/common/+/53afb231f54a69d827b882fa282b30bb10cb08a5)] [[3](https://android.googlesource.com/kernel/common/+/d3c17d5e271ab688cb117330ec85e125ebf24d88)] | EoP | High |
-| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --- | ---- |
+| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --- | ---- |
 
 [b4604acd52a691c2fd33ad0a0fafb7cc19dee5de - kernel/common - Git at Google (googlesource.com)](https://android.googlesource.com/kernel/common/+/b4604acd52a691c2fd33ad0a0fafb7cc19dee5de)
-
 
 ### CVE-2021-39686
 
 | CVE-2021-39686 | A-200688826``[Upstream kernel](https://android.googlesource.com/kernel/common/+/d49297739550) [[2](https://android.googlesource.com/kernel/common/+/3af7a2f61023)] [[3](https://android.googlesource.com/kernel/common/+/11db2de0af2a)] [[4](https://android.googlesource.com/kernel/common/+/a4eacf3227bd)] | EoP | High |
-| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --- | ---- |
+| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --- | ---- |
 
 [d49297739550 - kernel/common - Git at Google (googlesource.com)](https://android.googlesource.com/kernel/common/+/d49297739550)
 
 ### CVE-2021-39698
 
 | CVE-2021-39698 | A-185125206``[Upstream kernel](https://android.googlesource.com/kernel/common/+/42288cb44c4b) [[2](https://android.googlesource.com/kernel/common/+/a880b28a71e3)] [[3](https://android.googlesource.com/kernel/common/+/9537bae0da1f)] [[4](https://android.googlesource.com/kernel/common/+/363bee27e258)] [[5](https://android.googlesource.com/kernel/common/+/50252e4b5e98)] | EoP | High |
-| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --- | ---- |
+| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --- | ---- |
 
 [42288cb44c4b - kernel/common - Git at Google (googlesource.com)](https://android.googlesource.com/kernel/common/+/42288cb44c4b)
 
 ### CVE-2021-3655
 
 | CVE-2021-3655 | A-197154735``[Upstream kernel](https://android.googlesource.com/kernel/common/+/d4dbef7046e2) [[2](https://android.googlesource.com/kernel/common/+/6ef81a5c0e22)] [[3](https://android.googlesource.com/kernel/common/+/ffca46766850)] [[4](https://android.googlesource.com/kernel/common/+/ccb79116c372)] | ID | High |
-| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -- | ---- |
+| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -- | ---- |
 
 [d4dbef7046e2 - kernel/common - Git at Google (googlesource.com)](https://android.googlesource.com/kernel/common/+/d4dbef7046e2)
-
 
 ## MediaTek components
 
 ### CVE-2022-20047
 
 | CVE-2022-20047 | A-213120685``M-ALPS05917489[*](https://source.android.com/security/bulletin/2022-03-01#asterisk) | High |
-| -------------- | ---------------------------------------------------------------------------------------------------- | ---- |
+| -------------- | --------------------------------------------------------------------------------------------- | ---- |
 
 In video decoder, there is a possible out of bounds write due to a missing bounds check. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.
 
 ### CVE-2022-20048
 
 | CVE-2022-20048`` | A-213116796``M-ALPS05917502[*](https://source.android.com/security/bulletin/2022-03-01#asterisk) | High |
-| ----------------------- | ---------------------------------------------------------------------------------------------------- | ---- |
+| ---------------- | --------------------------------------------------------------------------------------------- | ---- |
 
 In video decoder, there is a possible out of bounds write due to a missing bounds check. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.
 
 ### CVE-2022-20053
 
 | CVE-2022-20053 | A-213120689``M-ALPS06219097[*](https://source.android.com/security/bulletin/2022-03-01#asterisk) | High |
-| -------------- | ---------------------------------------------------------------------------------------------------- | ---- |
+| -------------- | --------------------------------------------------------------------------------------------- | ---- |
 
 In ims service, there is a possible escalation of privilege due to a missing permission check. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.
 
@@ -231,36 +227,35 @@ In ims service, there is a possible escalation of privilege due to a missing per
 ### CVE-2021-35088
 
 | CVE-2021-35088 | A-204905738``[QC-CR#3007473](https://source.codeaurora.org/quic/qsdk/platform/vendor/qcom-opensource/wlan/qca-wifi-host-cmn/commit/?id=6196d775c367df4dca39bf5c20546058bd4b6cc6) | High | WLAN |
-| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---- | ---- |
+| -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---- | ---- |
 
 [platform/vendor/qcom-opensource/wlan/qca-wifi-host-cmn - Unnamed repository (codeaurora.org)](https://source.codeaurora.org/quic/qsdk/platform/vendor/qcom-opensource/wlan/qca-wifi-host-cmn/commit/?id=6196d775c367df4dca39bf5c20546058bd4b6cc6)
 
 ### CVE-2021-35103
 
 | CVE-2021-35103`` | A-209481110``[QC-CR#3033509](https://source.codeaurora.org/quic/qsdk/platform/vendor/qcom-opensource/wlan/qca-wifi-host-cmn/commit/?id=dce054909b432773df3d1c8c4230bad7f12a2b45) | High | WLAN |
-| ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---- | ---- |
+| ---------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---- | ---- |
 
 [platform/vendor/qcom-opensource/wlan/qca-wifi-host-cmn - Unnamed repository (codeaurora.org)](https://source.codeaurora.org/quic/qsdk/platform/vendor/qcom-opensource/wlan/qca-wifi-host-cmn/commit/?id=dce054909b432773df3d1c8c4230bad7f12a2b45)
 
 ### CVE-2021-35105
 
-
 | CVE-2021-35105`` | A-209469958``[QC-CR#3034743](https://source.codeaurora.org/quic/la/kernel/msm-4.9/commit/?id=c1c8190946b55edf536ec53432ebb94257280a2a) [[2](https://source.codeaurora.org/quic/la/kernel/msm-3.18/commit/?id=a134f476741492666ac75fd9dc14ed0f9d589d6e)] | High | Display |
-| ----------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---- | ------- |
+| ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---- | ------- |
 
 [kernel/msm-4.9 - Unnamed repository (codeaurora.org)](https://source.codeaurora.org/quic/la/kernel/msm-4.9/commit/?id=c1c8190946b55edf536ec53432ebb94257280a2a)
 
 ### CVE-2021-35106
 
 | CVE-2021-35106`` | A-209481028``[QC-CR#3035196](https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/wlan/qcacld-3.0/commit/?id=5f44ff8a5b375fec9361bd460856f5e02b8b7746) [[2](https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/wlan/qcacld-3.0/commit/?id=e17be617ae39e9e9520d0bc65d2c4e08c7697267)] | High | WLAN |
-| ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---- | ---- |
+| ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---- | ---- |
 
 [platform/vendor/qcom-opensource/wlan/qcacld-3.0 - Unnamed repository (codeaurora.org)](https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/wlan/qcacld-3.0/commit/?id=5f44ff8a5b375fec9361bd460856f5e02b8b7746)
 
 ### CVE-2021-35117
 
 | CVE-2021-35117`` | A-209481202``[QC-CR#3028360](https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/wlan/qcacld-3.0/commit/?id=ef0f64fb81401bd7ea71d05f9416c57c3ab7937d) | High | WLAN |
-| ----------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---- | ---- |
+| ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---- | ---- |
 
 [platform/vendor/qcom-opensource/wlan/qcacld-3.0 - Unnamed repository (codeaurora.org)](https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/wlan/qcacld-3.0/commit/?id=ef0f64fb81401bd7ea71d05f9416c57c3ab7937d)
 
@@ -269,7 +264,7 @@ In ims service, there is a possible escalation of privilege due to a missing per
 ### CVE-2021-1942
 
 | CVE-2021-1942`` | A-199191104[*](https://source.android.com/security/bulletin/2022-03-01#asterisk) | Critical |
-| ---------------------- | ----------------------------------------------------------------------------- | -------- |
+| --------------- | ----------------------------------------------------------------------------- | -------- |
 
 Improper handling of permissions of a shared memory region can lead to memory corruption
 
@@ -283,7 +278,7 @@ Possible buffer overflow to improper validation of hash segment of file while al
 ### CVE-2021-1950
 
 | CVE-2021-1950`` | A-199191539[*](https://source.android.com/security/bulletin/2022-03-01#asterisk) | High |
-| ---------------------- | ----------------------------------------------------------------------------- | ---- |
+| --------------- | ----------------------------------------------------------------------------- | ---- |
 
 Improper cleaning of secure memory between authenticated users can lead to face authentication bypass
 
@@ -297,14 +292,14 @@ Possible assertion due to improper validation of invalid NR CSI-IM resource conf
 ### CVE-2021-30329
 
 | CVE-2021-30329`` | A-199191831[*](https://source.android.com/security/bulletin/2022-03-01#asterisk) | High |
-| ----------------------- | ----------------------------------------------------------------------------- | ---- |
+| ---------------- | ----------------------------------------------------------------------------- | ---- |
 
 Possible assertion due to improper validation of TCI configuration
 
 ### CVE-2021-30332
 
 | CVE-2021-30332`` | A-199190643[*](https://source.android.com/security/bulletin/2022-03-01#asterisk) | High |
-| ----------------------- | ----------------------------------------------------------------------------- | ---- |
+| ---------------- | ----------------------------------------------------------------------------- | ---- |
 
 Possible assertion due to improper validation of OTA configuration
 
